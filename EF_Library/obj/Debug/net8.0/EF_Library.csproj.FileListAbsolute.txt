@@ -1,0 +1,12 @@
+D:\module25\EF_Library\bin\Debug\net8.0\EF_Library.deps.json
+D:\module25\EF_Library\bin\Debug\net8.0\EF_Library.dll
+D:\module25\EF_Library\bin\Debug\net8.0\EF_Library.pdb
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.csproj.AssemblyReference.cache
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.GeneratedMSBuildEditorConfig.editorconfig
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.AssemblyInfoInputs.cache
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.AssemblyInfo.cs
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.csproj.CoreCompileInputs.cache
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.dll
+D:\module25\EF_Library\obj\Debug\net8.0\refint\EF_Library.dll
+D:\module25\EF_Library\obj\Debug\net8.0\EF_Library.pdb
+D:\module25\EF_Library\obj\Debug\net8.0\ref\EF_Library.dll
