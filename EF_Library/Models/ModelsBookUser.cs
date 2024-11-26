@@ -8,8 +8,8 @@ namespace EF_Library.Models
         //(для этого придется удалить таблицы из БД, либо воспользоваться EnsureDeleted).
         //А также придумайте, как можно добавить в книгу автора и жанр книги.
        
-        public UserRepository repository { get; set; }
-        public BookRepository bookRepository {  get; set; }
+        public UserRepository? repository { get; set; } = new UserRepository();
+        public BookRepository? bookRepository {  get; set; } = new BookRepository();
         public ModelsBookUser(List<User> users, List<Book> books)
         {
             //вносим данные пользователеей
@@ -29,8 +29,7 @@ namespace EF_Library.Models
 
             try
             {
-              
-    
+       
                 var users_group1 = new List<User>();
                 users_group1.Add(users[0]);
                 users_group1.Add(users[1]);
@@ -46,12 +45,7 @@ namespace EF_Library.Models
                 bookRepository.TakeBookByUsers(books[1], users_group1);
                 bookRepository.TakeBookByUsers(books[2], users_group2);
 
-                
-                Console.WriteLine("Добавление пользователей в базу"); 
-
-                bookRepository.AddBooks(books);
-                repository.AddUsers(all_user);
-
+    
 
             }
 

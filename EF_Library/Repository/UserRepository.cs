@@ -5,8 +5,6 @@ namespace EF_Library
     public class UserRepository
     {
 
-
-
         public void SelectUser(int id)
         {
             using (var db = new AppContext())
@@ -17,14 +15,12 @@ namespace EF_Library
             }
         }
         //
-        public List<User> SelectAllUser()
+        public void SelectAllUser()
         {
             var selUser = new List<User>();
             using (var db = new AppContext())
             {
                 selUser = db.Users.ToList();
-
-                return selUser;
 
                 foreach (var user in selUser)
                 {
@@ -55,11 +51,11 @@ namespace EF_Library
         }
 
 
-        public void DeleteUser(User users)
+        public void DeleteUser(User user)
         {
             using (var db = new AppContext())
             {
-                db.Users.Remove(users);
+                db.Users.Remove(user);
                 db.SaveChanges();
 
             }

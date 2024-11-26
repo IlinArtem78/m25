@@ -4,6 +4,7 @@
     {
         private User InputDataUser()
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
             var user = new User(); 
             Console.WriteLine("Введите имя пользоваетля библиотеки");
             Console.WriteLine();
@@ -30,6 +31,7 @@
 
          private Book InputDataBook()
          {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             var book = new Book();
             Console.WriteLine("Введите название книги");
             Console.WriteLine();

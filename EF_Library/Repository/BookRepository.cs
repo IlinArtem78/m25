@@ -23,17 +23,23 @@
             {
                 var selBook = db.Books.Where(book => book.BookId == id); //выбор объекта по его индентификатору
                 db.SaveChanges();
+                foreach(var book in selBook) { 
+                    Console.WriteLine(book);
+                } 
             }
         }
         //
-        public List<Book> SelectAllBook()
+        public void SelectAllBook()
         {
             var selBook = new List<Book>();
             using (var db = new AppContext())
             {
                 selBook = db.Books.ToList();
                 db.SaveChanges();
-                return selBook;
+                foreach (var book in selBook)
+                {
+                    Console.WriteLine(book);
+                }
             }
 
         }
